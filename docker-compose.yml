@@ -1,0 +1,27 @@
+jorani:
+  build: .
+  dockerfile: Dockerfile
+  ports:
+   - "80:80"
+  links:
+   - mysql:mysql
+  environment:
+    - MYSQL_HOST=mysql
+    - MYSQL_USER=root
+    - MYSQL_PASSWORD=erpmedia
+    - MYSQL_DATABASE=lms
+    - SMTP_HOST=email-smtp.eu-west-1.amazonaws.com
+    - SMTP_USER=AKIAJTB5URO63O6UOWJA
+    - SMTP_PASSWORD=AtmEb70Myxc7gQKEvvzmWDtYa0ygCeNfRhrDSmKQWov8
+    - SMTP_PORT=25
+    - SMTP_CRYPTO=tls
+
+mysql:
+  image: mysql:5.7
+  environment:
+    - MYSQL_ROOT_PASSWORD=erpmedia
+    - MYSQL_DATABASE=lms
+  ports:
+   - "3306:3306"
+  volumes:
+    - ./lms.sql:/docker-entrypoint-initdb.d/lms.sql
