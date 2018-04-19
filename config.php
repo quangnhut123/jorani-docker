@@ -421,9 +421,9 @@ $config['proxy_ips'] = '';
 
 //____________________________________________________________________________
 //default email from
-$config['from_mail'] = 'do.not@reply.me';
-$config['from_name'] = 'Mediastep';
-$config['subject_prefix'] = '[LMS] ';
+$config['from_mail'] = getenv('FROM_MAIL');
+$config['from_name'] = getenv('FROM_NAME');
+$config['subject_prefix'] = getenv('SUBJECT_PREFIX');
 
 //____________________________________________________________________________
 //User management
