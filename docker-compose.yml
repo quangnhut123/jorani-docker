@@ -20,6 +20,7 @@ services:
             - SMTP_PASSWORD=AtmEb70Myxc7gQKEvvzmWDtYa0ygCeNfRhrDSmKQWov8
             - SMTP_PORT=25
             - SMTP_CRYPTO=tls
+            - SMTP_AUTH=TRUE
 
     mysql:
         image: mysql:5.7
