@@ -13,6 +13,7 @@ RUN a2enmod rewrite
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 COPY database.php /var/www/html/application/config/database.php
 COPY email.php /var/www/html/application/config/email.php
+COPY config.php /var/www/html/application/config/config.php
 ENV DEBIAN_FRONTEND teletype
 # Configure Apache2
 ENV APACHE_RUN_USER     www-data
