@@ -21,6 +21,7 @@ services:
             - SMTP_PORT=25
             - SMTP_CRYPTO=tls
             - SMTP_AUTH=TRUE
+            - FROM_MAIL=vacationrequest@mediastep.com
 
     mysql:
         image: mysql:5.7
