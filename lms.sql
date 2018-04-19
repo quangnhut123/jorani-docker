@@ -404,7 +404,9 @@ INSERT INTO `types` (`id`, `name`) VALUES
 (1, 'Unpaid leave'),
 (2, 'Maternity leave'),
 (3, 'Paternity leave'),
-(4, 'Sick leave');
+(4, 'Marriage leave'),
+(5, 'Sick leave'),
+(6, 'Funeral leave');
 
 --
 -- Structure of table `users`
