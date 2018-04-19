@@ -7,6 +7,8 @@ $config['smtp_host'] = getenv('SMTP_HOST');
 $config['smtp_user'] = getenv('SMTP_USER');
 $config['smtp_pass'] = getenv('SMTP_PASSWORD');
 $config['smtp_port'] = getenv('SMTP_PORT');
+$config['_smtp_auth'] = getenv('SMTP_AUTH');
+$config['from_mail'] = getenv('FROM_MAIL');
 $config['smtp_timeout']     = 30;                       // (in seconds)
 $config['smtp_crypto'] = getenv('SMTP_CRYPTO');         // '' or 'tls' or 'ssl'
 $config['smtp_debug']       = 0;                        // PHPMailer's SMTP debug info level: 0 = off, 1 = commands, 2 = commands and data, 3 = as 2 plus connection status, 4 = low level data output.
