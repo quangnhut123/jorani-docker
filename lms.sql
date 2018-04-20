@@ -400,13 +400,14 @@ CREATE TABLE IF NOT EXISTS `types` (
 -- Content of table `types`
 --
 INSERT INTO `types` (`id`, `name`) VALUES
-(0, 'Annual leave'),
-(1, 'Unpaid leave'),
-(2, 'Maternity leave'),
-(3, 'Paternity leave'),
-(4, 'Marriage leave'),
-(5, 'Sick leave'),
-(6, 'Funeral leave');
+(0, 'Compensation leave'),
+(1, 'Annual leave'),
+(2, 'Unpaid leave'),
+(3, 'Maternity leave'),
+(4, 'Paternity leave'),
+(5, 'Marriage leave'),
+(6, 'Sick leave'),
+(7, 'Funeral leave');
 
 --
 -- Structure of table `users`
